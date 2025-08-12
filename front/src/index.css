@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+
+  background: #faf2e6;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: Yekan Bakh FaNum !important;
+  font-weight: normal;
+  color: #101010;
+}

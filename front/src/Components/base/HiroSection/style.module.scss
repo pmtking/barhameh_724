@@ -1,0 +1,380 @@
+.hirosection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  margin-top: -20px;
+
+  .hirosection_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .hirosection_image {
+      animation: truck 0.9s ease-in-out;
+      margin-top: 30px;
+      .hirosection_image_img {
+        width: 600px;
+      }
+    }
+    .hirosection_content_text_form {
+      margin-top: -10px;
+      width: 200%;
+      .hirosection_content_text_form_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        animation: btn 0.8s ease-in;
+      }
+    }
+  }
+  @media only screen and (max-width: 1280px) {
+    .hirosection_content {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: 100px;
+
+        .hirosection_image_img {
+          width: 600px;
+        }
+      }
+      .hirosection_content_text_form {
+        .hirosection_content_text_form_h1 {
+          font-size: 16px !important;
+          text-align: start;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1150px) {
+    .hirosection {
+      .hirosection_circle {
+        width: 600px;
+        height: 600px;
+      }
+      .hirosection_content {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        .hirosection_image {
+          margin-top: 100px;
+          margin-left: 5px;
+          .hirosection_image_img {
+            width: 500px;
+            margin-top: 0px;
+          }
+        }
+        .hirosection_content_text_form {
+          .hirosection_content_text_form_h1 {
+            font-size: 16px !important;
+            text-align: start;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: translateX(-180px);
+    -webkit-transform: translateY(-100px);
+
+    width: 0px;
+    height: 0;
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@keyframes truck {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hirosection {
+    .hirosection_circle {
+      width: 600px;
+      height: 600px;
+    }
+    .hirosection_content {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: 20px;
+        margin-left: 5px;
+        .hirosection_image_img {
+          width: 600px;
+          margin-top: 0px;
+        }
+      }
+      .hirosection_content_text_form {
+        .hirosection_content_text_form_h1 {
+          font-size: 16px !important;
+          text-align: start;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hirosection {
+    .hirosection_circle {
+      top: -400px;
+      left: -200px;
+      width: 600px;
+      height: 600px;
+    }
+    .hirosection_content {
+      display: flex;
+      flex-direction: column-reverse;
+
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: -100px;
+        margin-left: 5px;
+        .hirosection_image_img {
+          width: 650px;
+          margin-top: 0px;
+        }
+      }
+      .hirosection_content_text_form {
+        .hirosection_content_text_form_h1 {
+          font-size: 16px !important;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .hirosection {
+    .hirosection_circle {
+      top: -400px;
+      left: -200px;
+      width: 600px;
+      height: 600px;
+    }
+    .hirosection_content {
+      display: flex;
+      flex-direction: column-reverse;
+
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: -100px;
+        margin-left: 5px;
+        .hirosection_image_img {
+          width: 580px;
+          margin-top: 0px;
+        }
+      }
+      .hirosection_content_text_form {
+        .hirosection_content_text_form_h1 {
+          font-size: 16px !important;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  .hirosection {
+    .hirosection_circle {
+      top: -400px;
+      left: -200px;
+      width: 550px;
+      height: 550px;
+    }
+    .hirosection_content {
+      display: flex;
+      flex-direction: column-reverse;
+
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: -100px;
+        margin-left: 5px;
+        .hirosection_image_img {
+          width: 500px;
+          margin-top: 0px;
+        }
+      }
+      .hirosection_content_text_form {
+        .hirosection_content_text_form_h1 {
+          font-size: 16px !important;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .hirosection {
+    .hirosection_circle {
+      top: -400px;
+      left: 0px;
+      width: 400px;
+      height: 400px;
+    }
+    .hirosection_content {
+      display: flex;
+      flex-direction: column-reverse;
+
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: -0px;
+        margin-left: 5px;
+        .hirosection_image_img {
+          width: 400px;
+          margin-top: 0px;
+        }
+      }
+      .hirosection_content_text_form {
+        .hirosection_content_text_form_h1 {
+          font-size: 16px !important;
+          text-align: center;
+          font-weight: 700;
+          p {
+            font-size: 14px;
+          }
+        }
+        .hirosection_content_text_form_buttons {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .hirosection {
+    .hirosection_circle {
+      top: -300px;
+      left: -1px;
+      width: 380px;
+      height: 380px;
+    }
+    .hirosection_content {
+      display: flex;
+      flex-direction: column-reverse;
+
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: -0px;
+        margin-left: 5px;
+        .hirosection_image_img {
+          width: 400px;
+          margin-top: 0px;
+        }
+      }
+      .hirosection_content_text_form {
+        width: 97%;
+        .hirosection_content_text_form_h1 {
+          font-size: 14px !important;
+          text-align: center;
+          font-weight: 700;
+          p {
+            font-size: 14px;
+          }
+        }
+        .hirosection_content_text_form_buttons {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .hirosection {
+    .hirosection_circle {
+      top: -300px;
+      left: -1px;
+      width: 380px;
+      height: 380px;
+    }
+    .hirosection_content {
+      display: flex;
+      flex-direction: column-reverse;
+
+      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      .hirosection_image {
+        margin-top: -0px;
+        margin-left: 5px;
+        .hirosection_image_img {
+          width: 350px;
+          margin-top: 0px;
+        }
+      }
+      .hirosection_content_text_form {
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .hirosection_content_text_form_h1 {
+          font-size: 14px !important;
+          text-align: center;
+          font-weight: 700;
+          width: 340px;
+          p {
+            font-size: 14px;
+          }
+        }
+        .hirosection_content_text_form_buttons {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

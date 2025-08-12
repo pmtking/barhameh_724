@@ -1,0 +1,42 @@
+.input {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+
+  .input_label {
+    top: -14px;
+    padding: 0px 8px;
+
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #697565;
+  }
+  .input_org {
+    border: 1px solid #fce6a7;
+    padding: 10px 8px;
+    border-radius: 20px;
+    outline: none;
+    &::placeholder {
+      color: #bbbbbb;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    &:focus {
+      border: 1px solid #ffb22c;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .input_org {
+      width: 150% !important;
+    }
+  }
+  @media only screen and (max-width: 395px) {
+    .input_org {
+      width: 160% !important;
+    }
+  }
+}

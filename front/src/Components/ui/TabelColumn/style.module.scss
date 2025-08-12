@@ -1,0 +1,38 @@
+.card_tabel {
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-block: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 60px;
+  .card_tabel_content {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 40px;
+  }
+
+  @media only screen and (max-width: 460px) {
+    .card_tabel_content {
+      gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 395px) {
+    gap: 6px;
+    padding-inline: 20px;
+    .card_tabel_content {
+      gap: 40px;
+      text-wrap: wrap;
+    }
+  }
+}

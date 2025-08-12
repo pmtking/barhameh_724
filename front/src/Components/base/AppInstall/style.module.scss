@@ -1,0 +1,40 @@
+.app_install {
+  width: 1820px;
+  margin-right: -120px;
+  height: 520px;
+  background: #ffb22c;
+  display: flex;
+  justify-content: center;
+  padding: 0 60px;
+  .app_install_content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    .app_install_content_image {
+    }
+    .app_install_content_text {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      text-align: start;
+      gap: 20px;
+      .app_install_content_text_h1 {
+        font-size: 45px;
+        width: 70%;
+        padding-bottom: 10px;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 2px solid #fff;
+      }
+      .app_install_content_text_p {
+      }
+      .app_install_content_button {
+        background: #fff;
+        border: none;
+        width: 50%;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

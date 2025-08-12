@@ -1,0 +1,49 @@
+.footer {
+  background: linear-gradient(to left, #faa627, white);
+  border-radius: 10px;
+  height: 250px;
+  display: flex;
+  padding-inline: 60px;
+  padding-block: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  .footer_about {
+    width: 350px;
+    padding-inline: 20px;
+    .footer_about_header {
+      text-align: start;
+      border-bottom: 2px dashed #848484;
+    }
+  }
+  .footer_about_links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    .footer_about_link_heder {
+      border-bottom: 1px dashed #848484;
+      padding-inline: 20px;
+      padding-bottom: 10px;
+    }
+    .footer_about_link_item {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .footer_about_namad {
+    margin-top: 10%;
+    width: 40;
+  }
+  @media only screen and (max-width: 395px) {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    .footer_about {
+      width: 350px;
+      .footer_about_header {
+        text-align: center;
+      }
+    }
+  }
+}

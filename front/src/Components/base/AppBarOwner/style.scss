@@ -1,0 +1,30 @@
+.app_bar_owner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .app_bar_owner_text {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: flex-start;
+    .app_bar_owner_text_h1 {
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #bbb;
+    }
+    .app_bar_owner_text_p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .app_bar_owner_text_button {
+      height: 40px;
+      background: rgb(255, 178, 44);
+      border-radius: 10px;
+      &:hover {
+        background: rgb(252, 213, 147);
+      }
+    }
+  }
+}

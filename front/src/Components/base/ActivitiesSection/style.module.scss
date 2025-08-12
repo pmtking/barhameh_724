@@ -1,0 +1,95 @@
+.activate_section {
+  .activate_section_header {
+    border-bottom: 1px solid #aaa;
+
+    .activate_section_header_button {
+      margin-bottom: 20px;
+      background: #faa627;
+      width: 30%;
+    }
+  }
+  .activate_section_content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media only screen and (max-width: 1380px) {
+    .activate_section_content {
+      justify-content: center;
+
+      width: 100%;
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+  }
+  @media only screen and (max-width: 1280px) {
+    .activate_section_content {
+      justify-content: center;
+
+      width: 100%;
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+  }
+  @media only screen and (max-width: 1080px) {
+    .activate_section_content {
+      justify-content: flex-start;
+      padding-inline: 10px;
+      width: 100%;
+      flex-wrap: nowrap;
+      gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 840px) {
+    .activate_section_content {
+      justify-content: flex-start;
+      padding-inline: 60px;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .activate_section_content {
+      justify-content: flex-start;
+      padding-inline: 10px;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 512px) {
+    .activate_section_content {
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 390px) {
+    // border: 1px solid #000;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    .article_card_content {
+      .article_card_content_image {
+        width: 300px !important;
+        .article_card_content_image_img {
+          width: 300px;
+        }
+      }
+      .article_card_content_title {
+        font-size: 14px;
+      }
+      .article_card_content_desc {
+        font-size: 12px;
+      }
+      .article_card_content_footer {
+        .article_card_content_footer_time {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

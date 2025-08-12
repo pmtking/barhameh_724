@@ -1,0 +1,102 @@
+.about_app {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  .about_app_header {
+    margin-bottom: -50px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .about_app_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .about_app_content_box {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .about_app_content_image_box {
+      // Add styles if needed
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .about_app_header {
+      width: 90%;
+      font-size: 16px;
+    }
+
+    .about_app_content {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .about_app_content_box {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-top: 30px;
+    gap: 30px;
+
+    .about_app_header {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .about_app_content {
+      .about_app_content_box {
+        width: 100%;
+        gap: 8px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 395px) {
+    margin-top: 20px;
+    width: 100%;
+
+    .about_app_header {
+      font-size: 16px;
+      width: 90%;
+    }
+
+    .about_app_content {
+      .about_app_content_box {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 376px) {
+    margin-top: 20px;
+    width: 100%;
+
+    .about_app_header {
+      font-size: 16px;
+      width: 90%;
+    }
+
+    .about_app_content {
+      .about_app_content_box {
+        width: 100%;
+      }
+    }
+  }
+}

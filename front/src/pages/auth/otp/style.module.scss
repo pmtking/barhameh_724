@@ -1,0 +1,108 @@
+.otp_sms {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  .bg_image {
+    position: relative;
+    z-index: 1;
+    .bg_image_src {
+    }
+    .bg_image_sms_box {
+      top: 40%;
+      right: 200px;
+      position: absolute;
+      background: white;
+      border: 1px solid #000;
+      width: 250px;
+      height: 45px;
+      z-index: 10;
+      border-radius: 20px 20px 20px 3px;
+      padding-inline: 10px;
+      padding-block: 10px;
+    }
+  }
+  .otp_sms_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 12px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .otp_sms_content_header {
+      text-align: center;
+
+      .otp_sms_content_header_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .otp_sms_content_header_title {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .otp_sms_content_header_subtitle {
+          font-size: 14px;
+          color: #6c757d;
+        }
+        .otp_sms_content_header_edit_number {
+          font-size: 14px;
+          color: #007bff;
+          text-decoration: none;
+          border-radius: 10px;
+          background: #ccc;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .otp_sms_content_time {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      span {
+        font-size: 14px;
+        padding-inline: 10px;
+        padding-block: 6px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        &:hover {
+          background: #ebe8e8;
+        }
+      }
+    }
+  }
+  .otp_sms_content_input {
+    direction: ltr;
+  }
+  @media only screen and (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .bg_image {
+      .bg_image_src {
+        width: 500px;
+        margin-top: -300px;
+      }
+      .bg_image_sms_box {
+        top: -60%;
+        right: 50px;
+      }
+    }
+    .otp_sms_content {
+      position: absolute;
+      top: 50%;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+    }
+  }
+}

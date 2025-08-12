@@ -1,0 +1,40 @@
+.outline {
+  padding: 10px 8px;
+  border: 1px solid #ffb22c;
+  border-radius: 10px;
+  background: none;
+  width: 30vh;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #ffb22c;
+  }
+}
+
+.btn {
+  background: #ffb22c;
+  padding: 10px 8px;
+  width: 30vh;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.8 ease;
+  &:active {
+    background: #aaa;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .outline {
+    width: 50vh;
+  }
+  .btn {
+    width: 50vh !important;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .outline {
+    width: 40vh;
+  }
+  .btn {
+    width: 40vh !important;
+  }
+}

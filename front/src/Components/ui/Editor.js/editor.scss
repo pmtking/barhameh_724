@@ -1,0 +1,31 @@
+.editor-container {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  margin-right: 5px;
+}
+
+.editor {
+  min-height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.editor img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.input {
+  display: none;
+}
