@@ -1,0 +1,28 @@
+.card_user {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 6px;
+  padding-inline: 20px;
+  padding-block: 3px;
+  border: 1px solid #aaaaaa3b;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  .card_user_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    .card_user_content_role {
+      font-size: 12px;
+      color: #aaa;
+      font-weight: 600;
+    }
+  }
+  .card_user_image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+}

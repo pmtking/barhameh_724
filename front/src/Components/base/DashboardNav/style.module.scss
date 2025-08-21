@@ -1,15 +1,63 @@
-.dashboard_nav{
+.dashboard_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 79vw;
+  border: 1px solid #aaa;
+  padding-block: 8px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
-    display: flex;
-    justify-content: space-between;
+  .dashboard_nav__right {
+    /* استایل‌های مربوط به بخش راست ناوبری */
+  }
+
+  .dashboard_nav__left {
+    display: flex ;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 100vh;
-    .dashboard_nav__right{
+    gap: 15px;
+    /* استایل‌های مربوط به بخش چپ ناوبری */
+  }
+}
 
-    }
-    .dashboard_nav__left {
-        
-    }
+.modal {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
 
+.modal.open {
+  left: 0;
+}
+
+.modal_content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -7px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
 }
