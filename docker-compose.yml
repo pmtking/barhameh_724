@@ -1,6 +1,25 @@
 version: '3.8'
 
 services:
+  git-sync:
+    image: alpine/git
+    container_name: git-sync
+    volumes:
+      - ./project:/app
+    working_dir: /app
+    entrypoint: >
+      sh -c "
+        if [ ! -d .git ]; then
+          git clone https://github.com/pmtking/barhameh_724.git .;
+        else
+          git pull;
+        fi
+        sleep 5
+      "
+    restart: "no"
+    networks:
+      - app_net
+
   mongo:
     image: mongo:6.0
     container_name: mongo
@@ -22,7 +41,7 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./project/backend
     container_name: backend
     ports:
       - "3001:3001"
@@ -35,11 +54,11 @@ services:
     networks:
       - app_net
     volumes:
-      - ./backend:/app
+      - ./project/backend:/app
 
   frontend:
     build:
-      context: ./front
+      context: ./project/front
     container_name: frontend
     ports:
       - "80:80"
@@ -47,7 +66,7 @@ services:
     networks:
       - app_net
     volumes:
-      - ./front:/app
+      - ./project/front:/app
 
 volumes:
   mongo_data:
